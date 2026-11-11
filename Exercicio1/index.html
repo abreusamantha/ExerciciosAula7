@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Veículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: lightblue;">
+
+    <header class="cabecalho">
+        <h1>Cadastro de Veículos</h1>
+    </header>
+
+    <div class="formulario">
+        <form action="processa.php" method="post">
+
+            <label for="placa">Placa do veículo</label>
+            <input type="text" required name="placa" id="placa" placeholder="ABC-1234">
+
+            <label for="tipoVeiculo">Tipo de veículo</label>
+            <select required name="tipoVeiculo" id="tipoVeiculo">
+                <option value="">Selecione...</option>
+                <option value="Carro">Carro</option>
+                <option value="Moto">Moto</option>
+            </select>
+
+            <label for="horas">Quantidade de horas estacionadas</label>
+            <input type="number" name="horas" id="horas">
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
+
